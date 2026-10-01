@@ -2,9 +2,9 @@
 
 [官网 / Website](https://qq244358862.github.io/zhijie-direct-translate/) · [报告问题 / Report a bug](https://github.com/qq244358862/zhijie-direct-translate/issues/new?template=bug-report.yml) · [功能建议 / Suggest an improvement](https://github.com/qq244358862/zhijie-direct-translate/issues/new?template=feature-request.yml)
 
-网页与 PDF 双语阅读、输入框原位翻译、本地保存阅读成果。网站支持简体中文、繁体中文和英文；软件当前版本 0.6.3。
+网页与 PDF 双语阅读、输入框原位翻译、本地保存阅读成果。网站支持简体中文、繁体中文和英文；软件当前版本 0.6.4。
 
-Bilingual webpage and PDF reading, in-place input translation, and locally saved reading progress. The website supports Simplified Chinese, Traditional Chinese, and English. Current extension version: 0.6.3.
+Bilingual webpage and PDF reading, in-place input translation, and locally saved reading progress. The website supports Simplified Chinese, Traditional Chinese, and English. Current extension version: 0.6.4.
 
 本仓库用于产品介绍页和公开反馈。目前不包含扩展源码或安装包。网页/PDF 主要为英文译简体中文，OCR 支持英文、德文。
 
