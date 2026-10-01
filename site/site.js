@@ -13,7 +13,7 @@ function render(){
  for(const node of document.querySelectorAll('[data-ta]'))node.setAttribute('aria-label',text(node.dataset.ta));
  document.title=text('pageTitle');document.querySelector('meta[name="description"]').content=text('metaDescription');
  document.querySelectorAll('[data-version]').forEach(node=>{node.textContent=config.version;});
- if(config.contactEmail){const body=[text('mailVersion')+config.version,text('mailBrowser'),text('mailSteps'),text('mailExpected'),text('mailActual'),text('mailSensitive')].join('\n\n');document.getElementById('email-link').href='mailto:'+config.contactEmail+'?'+new URLSearchParams({subject:text('mailSubject'),body});}
+ if(config.contactEmail){const body=[text('mailVersion')+config.version,text('mailBrowser'),text('mailSteps'),text('mailExpected'),text('mailActual'),text('mailSensitive')].join('\r\n\r\n');document.getElementById('email-link').href='mailto:'+config.contactEmail+'?subject='+encodeURIComponent(text('mailSubject'))+'&body='+encodeURIComponent(body);}
  document.getElementById('site-status').textContent=text('languageChanged');
 }
 languageSelect.addEventListener('change',()=>{preference=languages.has(languageSelect.value)?languageSelect.value:'auto';try{localStorage.setItem('zt-site-language',preference);}catch{}render();});
