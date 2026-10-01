@@ -1,0 +1,51 @@
+name: "Bug report / 问题反馈 / 問題回報"
+description: "Tell us what failed. 可使用中文或其他语言。可使用繁體中文。"
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for helping. This report is public. Do not include API keys, passwords, or private PDFs. 此反馈公开，请勿附上密钥、密码或私人文档。此回報公開，請勿附上金鑰、密碼或私人文件。"
+  - type: input
+    id: version
+    attributes:
+      label: "Extension version / 软件版本 / 軟體版本"
+      placeholder: "e.g. 0.6.3"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: "Browser and OS / 浏览器与系统 / 瀏覽器與系統"
+      placeholder: "Chrome 138 / Windows 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: "Affected feature / 出问题的功能 / 受影響功能"
+      options:
+        - "Webpage translation / 网页翻译 / 網頁翻譯"
+        - "PDF reading / PDF 阅读 / PDF 閱讀"
+        - "Input translation / 输入翻译 / 輸入翻譯"
+        - "Semantic search / 按意思查找 / 語意搜尋"
+        - "Settings or other / 设置或其他 / 設定或其他"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce / 复现步骤 / 重現步驟"
+      description: "Describe what you clicked or typed. 请描述点击和输入的步骤。請描述操作步驟。"
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: "Expected and actual result / 预期与实际结果 / 預期與實際結果"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Extra context or redacted screenshot / 补充信息或遮挡后的截图 / 補充資訊或遮擋後的截圖"
+      description: "URLs and files are optional. Share only content you can make public. 网址与文件不必提供；只提交可公开的内容。網址與文件不必提供；只提交可公開的內容。"

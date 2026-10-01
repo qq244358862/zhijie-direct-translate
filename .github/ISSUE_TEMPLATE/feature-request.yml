@@ -1,0 +1,24 @@
+name: "Feature request / 功能建议 / 功能建議"
+description: "Suggest an improvement in any language. 告诉我们你的使用场景。告訴我們你的使用場景。"
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: "Suggestions are public. Do not include credentials or private documents. 建议会公开，请勿包含密钥或私人文档。建議會公開，請勿包含金鑰或私人文件。"
+  - type: textarea
+    id: context
+    attributes:
+      label: "Your use case / 使用场景 / 使用情境"
+      description: "What are you trying to do? What makes it difficult today? 想完成什么，目前困难在哪里？想完成什麼，目前困難在哪裡？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Suggested improvement / 改进建议 / 改善建議"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives or examples / 替代办法或例子 / 替代方法或例子"

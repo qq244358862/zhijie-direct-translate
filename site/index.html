@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>直接翻译 · Direct Translate</title>
+  <meta name="description" content="直接翻译：网页与 PDF 双语阅读，输入框原位翻译，保存阅读成果。简体中文、繁体中文与英文界面。">
+  <meta name="theme-color" content="#236951">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-t="skip">跳到正文</a>
+  <header class="header"><div class="shell header-inner">
+    <a class="brand" href="#"><img src="./favicon.svg" alt="" width="34" height="34"><span><strong data-t="brand">直接翻译</strong><small>Direct Translate</small></span></a>
+    <nav aria-label="主导航" data-ta="nav"><a href="#features" data-t="navFeatures">功能</a><a href="#start" data-t="navStart">开始使用</a><a href="#feedback" data-t="navFeedback">反馈</a></nav>
+    <label class="language"><span class="sr-only" data-t="language">网站语言</span><select id="language"><option value="auto" data-t="auto">跟随浏览器</option><option value="zh_CN">简体中文</option><option value="zh_TW">繁體中文</option><option value="en">English</option></select></label>
+  </div></header>
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span><span data-t="eyebrow">本地优先的浏览器翻译工具</span></p>
+        <h1 data-t="headline">读英文，<br>不打断思路。</h1>
+        <p class="lead" data-t="lead">在网页里读双语，在 PDF 里保留原页。输入文字也能原位翻译，阅读成果随手保存。</p>
+        <div class="hero-actions"><a class="button primary" href="#start" data-t="start">开始使用 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#feedback" data-t="giveFeedback">反馈与建议 <span aria-hidden="true">→</span></a></div>
+        <p class="availability"><span data-t="browsers">Chrome / Edge 138+</span><span aria-hidden="true">·</span><span data-t="uiLanguages">简体中文 / 繁體中文 / English</span></p>
+      </div>
+      <div class="preview" aria-label="功能示意" data-ta="previewLabel">
+        <div class="preview-top"><span class="window-dots" aria-hidden="true">● ● ●</span><span data-t="previewNote">功能示意</span><span class="preview-badge">ZT</span></div>
+        <div class="preview-tabs" role="tablist" aria-label="功能预览" data-ta="previewTabs"><button id="tab-web" role="tab" aria-controls="demo-web" aria-selected="true" tabindex="0" data-demo="web" data-t="web">网页</button><button id="tab-pdf" role="tab" aria-controls="demo-pdf" aria-selected="false" tabindex="-1" data-demo="pdf" data-t="pdf">PDF</button><button id="tab-input" role="tab" aria-controls="demo-input" aria-selected="false" tabindex="-1" data-demo="input" data-t="input">输入框</button></div>
+        <div id="demo-web" class="demo" role="tabpanel" aria-labelledby="tab-web"><p class="demo-kicker">A SMALL IDEA, WELL UNDERSTOOD</p><h2>Good ideas deserve<br>to be understood.</h2><div class="translated"><span class="translation-mark" aria-hidden="true">译</span><p>好想法，值得被读懂。</p></div><div class="demo-lines" aria-hidden="true"><i></i><i></i><i></i></div><p class="demo-caption" data-t="webDemo">原文与译文一起读，随时切回原文。</p></div>
+        <div id="demo-pdf" class="demo" role="tabpanel" aria-labelledby="tab-pdf" hidden=""><div class="paper"><span class="paper-page">01 / 12</span><p class="demo-kicker">READ AT YOUR PACE</p><h2>Keep your place.</h2><div class="translated"><span class="translation-mark" aria-hidden="true">译</span><p>读到哪里，保存到哪里。</p></div><div class="demo-lines" aria-hidden="true"><i></i><i></i><i></i></div></div><p class="saved"><span aria-hidden="true">✓</span> <span data-t="pdfDemo">原 PDF、译文与段落位置，保存于本机。</span></p></div>
+        <div id="demo-input" class="demo" role="tabpanel" aria-labelledby="tab-input" hidden=""><p class="demo-kicker" data-t="inputDemoTitle">输入文字，也能直接翻译</p><div class="demo-input-box"><span id="demo-input-value">你好，世界。</span><span class="caret" aria-hidden="true"></span></div><button id="demo-trigger" class="space-trigger"><span><kbd>Space</kbd><kbd>Space</kbd><kbd>Space</kbd></span><strong data-t="tryDemo">点击看看替换效果</strong></button><p class="demo-caption" data-t="inputDemo">快速连按三次空格，直接替换。不会自动搜索或发送。</p><p class="demo-disclaimer" data-t="demoDisclaimer">这是交互示意，不会请求翻译服务。</p></div>
+        <div class="preview-footer"><span class="dot"></span><span data-t="previewFooter">你选择内容，工具处理语言。</span></div>
+      </div>
+    </section>
+    <div class="promise shell"><p data-t="promise">一个工具，照顾三种阅读场景。</p><span class="version">v<span data-version="">0.6.3</span><span data-t="devVersion"> · 开发版</span></span></div>
+    <section id="features" class="features shell" aria-labelledby="features-heading">
+      <div class="section-heading"><p class="eyebrow" data-t="featuresEyebrow">让翻译融入阅读</p><h2 id="features-heading" data-t="featuresTitle">常用的事，少走一步。</h2></div>
+      <div class="feature-grid">
+        <article><span class="feature-number">01 / WEB</span><h3 data-t="webTitle">留在网页里阅读</h3><p data-t="webBody">双语、仅中文、原文，随时切换。用中文按意思查找英文段落，结果指向原文。</p></article>
+        <article><span class="feature-number">02 / PDF</span><h3 data-t="pdfTitle">积累每一页成果</h3><p data-t="pdfBody">自动保存页码、原文与译文。重开文件继续读，单段修订后导出统一阅读包。</p></article>
+        <article><span class="feature-number">03 / INPUT</span><h3 data-t="inputTitle">写完，直接翻译</h3><p data-t="inputBody">搜索框快速连按三次空格，直接替换内容。快捷键可翻译选区，并提供恢复原文入口。</p></article>
+      </div>
+    </section>
+    <section class="approach shell" aria-labelledby="approach-title"><div><p class="eyebrow" data-t="approachEyebrow">选择清楚，使用安心</p><h2 id="approach-title" data-t="approachTitle">翻译方式，由你决定。</h2></div><div class="approach-items"><article><h3 data-t="localTitle">浏览器本地翻译</h3><p data-t="localBody">设备支持时在本机生成译文，首次可能下载语言包。无需插件账号。</p></article><article><h3 data-t="apiTitle">使用自己的 API</h3><p data-t="apiBody">支持 OpenAI-compatible 服务。主动翻译的文字发送到你配置的服务，按服务商计费。</p></article><article><h3 data-t="scopeTitle">知道当前支持什么</h3><p data-t="scopeBody">网页与 PDF 主要为英文译简体中文；输入翻译可选多种目标语言。图片文字识别目前支持英文、德文。复杂 PDF 请对照原页核对。</p></article></div></section>
+    <section id="start" class="start shell" aria-labelledby="start-heading"><div class="section-heading"><p class="eyebrow" data-t="startEyebrow">开始使用</p><h2 id="start-heading" data-t="startTitle">装好后，打开一篇文章。</h2><p data-t="startIntro">当前为桌面浏览器开发版。安装包发布后，将在这里提供下载入口。</p></div><div class="install-layout"><ol class="steps"><li><h3 data-t="step1Title">获取安装包</h3><p data-t="step1Body">解压安装资料包，找到直接包含 manifest.json 的扩展文件夹。</p></li><li><h3 data-t="step2Title">加载到浏览器</h3><p data-t="step2Body">打开扩展管理页，启用开发者模式，选择“加载已解压的扩展程序”。Chrome：chrome://extensions；Edge：edge://extensions。</p></li><li><h3 data-t="step3Title">点击图标，开始阅读</h3><p data-t="step3Body">固定工具栏图标。打开英文文章，点击图标，再读取页面并翻译。更新扩展后重新加载，并刷新网页。</p></li></ol><aside class="install-card"><span class="install-mark" aria-hidden="true">↗</span><h3 data-t="installCardTitle">准备好你的阅读工具</h3><p data-t="installCardBody">界面可跟随浏览器，也可手动切换简体中文、繁体中文、英文。界面语言与翻译目标独立。</p><a id="download-link" class="button primary" hidden="" data-t="download">下载最新版本</a><p id="download-pending" class="small" data-t="downloadPending">安装包尚未公开发布。</p><a id="project-link" class="text-link" data-t="project" href="https://github.com/qq244358862/zhijie-direct-translate" target="_blank" rel="noopener noreferrer">查看 GitHub 项目 ↗</a></aside></div></section>
+    <section id="feedback" class="feedback" aria-labelledby="feedback-title"><div class="shell"><div class="section-heading"><p class="eyebrow" data-t="feedbackEyebrow">一起把工具做得更好</p><h2 id="feedback-title" data-t="feedbackTitle">遇到问题，告诉我们。</h2><p data-t="feedbackIntro">用你习惯的语言反馈。版本、浏览器和复现步骤，会帮助我们更快定位。</p></div><div class="feedback-grid">
+      <article id="issue-card"><span class="feedback-kind" data-t="publicKind">公开 · 需要 GitHub 账号</span><h3 data-t="bugTitle">报告问题</h3><p data-t="bugBody">翻译未替换、PDF 显示异常或某一步无法完成？提交问题后可以跟踪处理进展。</p><a id="bug-link" class="button secondary" data-t="bugAction" href="https://github.com/qq244358862/zhijie-direct-translate/issues/new?template=bug-report.yml" target="_blank" rel="noopener noreferrer">提交问题 ↗</a></article>
+      <article id="idea-card"><span class="feedback-kind" data-t="publicKind">公开 · 需要 GitHub 账号</span><h3 data-t="ideaTitle">提出建议</h3><p data-t="ideaBody">希望增加一种语言、改进某个操作，或有更好的阅读方式？告诉我们使用场景。</p><a id="idea-link" class="button secondary" data-t="ideaAction" href="https://github.com/qq244358862/zhijie-direct-translate/issues/new?template=feature-request.yml" target="_blank" rel="noopener noreferrer">提出建议 ↗</a></article>
+      <article id="email-card" hidden=""><span class="feedback-kind" data-t="emailKind">私密 · 无需 GitHub 账号</span><h3 data-t="emailTitle">邮件反馈</h3><p data-t="emailBody">不方便公开的问题可以发邮件。点击后打开邮件程序，由你检查并发送。</p><a id="email-link" class="button secondary" data-t="emailAction">写反馈邮件 ↗</a></article>
+      <article id="form-card" hidden=""><span class="feedback-kind" data-t="formKind">反馈表单</span><h3 data-t="formTitle">填写反馈表单</h3><p data-t="formBody">用简短表单描述问题或建议。打开后请查看表单的登录要求和信息说明。</p><a id="form-link" class="button secondary" data-t="formAction">打开表单 ↗</a></article>
+      <article id="discussion-card" hidden=""><span class="feedback-kind">GitHub Discussions</span><h3 data-t="discussionTitle">交流使用经验</h3><p data-t="discussionBody">讨论阅读方法与功能想法，看看其他用户如何使用。</p><a id="discussion-link" class="button secondary" data-t="discussionAction">参与讨论 ↗</a></article>
+    </div><p class="feedback-note" data-t="feedbackNote">GitHub 问题和建议是公开的。请不要上传 API Key、密码或私人文档；截图前请遮挡个人信息。</p><p class="small"><a id="existing-issues" class="text-link" data-t="existingIssues" href="https://github.com/qq244358862/zhijie-direct-translate/issues" target="_blank" rel="noopener noreferrer">先看看已有反馈 ↗</a></p></div></section>
+    <section class="faq shell" aria-labelledby="faq-title"><div class="section-heading"><p class="eyebrow">FAQ</p><h2 id="faq-title" data-t="faqTitle">开始前，了解这几件事。</h2></div><details><summary data-t="faqAccount">需要注册账号吗？</summary><p data-t="faqAccountBody">插件本身不需要账号。浏览器本地翻译取决于设备支持；使用自己的 API 时，需要相应服务的配置或密钥。GitHub 公开反馈需要 GitHub 账号。</p></details><details><summary data-t="faqData">阅读数据保存在哪里？</summary><p data-t="faqDataBody">译文缓存和 PDF 阅读成果保存在当前浏览器。文档记录不自动过期，但卸载扩展或清除浏览器数据仍会删除记录，请导出阅读包备份。</p></details><details><summary data-t="faqPdf">能导出一本普通中文版 PDF 吗？</summary><p data-t="faqPdfBody">目前导出阅读包 ZIP，包含原 PDF、已保存译文和排版数据，可导入后继续阅读。普通中文版 PDF 导出尚未提供；图片识别也不能保证读到页面上所有文字。</p></details><details><summary data-t="faqSite">这个网站会读取我的文档吗？</summary><p data-t="faqSiteBody">这个介绍页不访问扩展数据、文档或剪贴板，也不内嵌统计或第三方表单。反馈链接会打开对应服务；只有你选择提交的内容才会进入反馈渠道。</p></details></section>
+  </main>
+  <footer class="footer shell"><span data-t="footerBrand">直接翻译 · Direct Translate</span><p data-t="footerNote">为专注阅读而做。第三方组件声明可在软件的许可页面查看。</p><a href="#feedback" data-t="navFeedback">反馈</a></footer>
+  <div id="site-status" class="sr-only" role="status" aria-live="polite"></div>
+  <script type="module" src="./site.js"></script>
+
+</body></html>

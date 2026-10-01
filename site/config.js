@@ -1,0 +1,1 @@
+export default {"repositoryUrl":"https://github.com/qq244358862/zhijie-direct-translate","contactEmail":null,"downloadUrl":null,"discussionUrl":null,"formUrl":null,"version":"0.6.3"};
