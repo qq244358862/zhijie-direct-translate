@@ -1,1 +1,1 @@
-export default {"repositoryUrl":"https://github.com/qq244358862/zhijie-direct-translate","contactEmail":"hello@tianmengdesign.com","downloadUrl":null,"discussionUrl":null,"formUrl":null,"version":"0.6.4"};
+export default {"repositoryUrl":"https://github.com/qq244358862/zhijie-direct-translate","contactEmail":"hello@tianmengdesign.com","downloadUrl":null,"discussionUrl":null,"formUrl":null,"version":"0.6.7"};
