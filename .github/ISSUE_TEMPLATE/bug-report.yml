@@ -9,7 +9,7 @@ body:
     id: version
     attributes:
       label: "Extension version / 软件版本 / 軟體版本"
-      placeholder: "e.g. 0.6.3"
+      placeholder: "e.g. 0.7.0"
     validations:
       required: true
   - type: input
@@ -25,6 +25,7 @@ body:
       label: "Affected feature / 出问题的功能 / 受影響功能"
       options:
         - "Webpage translation / 网页翻译 / 網頁翻譯"
+        - "Selection translation / 划词翻译 / 劃詞翻譯"
         - "PDF reading / PDF 阅读 / PDF 閱讀"
         - "Input translation / 输入翻译 / 輸入翻譯"
         - "Semantic search / 按意思查找 / 語意搜尋"

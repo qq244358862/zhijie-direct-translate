@@ -2,9 +2,9 @@
 
 [官网 / Website](https://qq244358862.github.io/zhijie-direct-translate/) · [报告问题 / Report a bug](https://github.com/qq244358862/zhijie-direct-translate/issues/new?template=bug-report.yml) · [功能建议 / Suggest an improvement](https://github.com/qq244358862/zhijie-direct-translate/issues/new?template=feature-request.yml)
 
-网页与 PDF 双语阅读、输入框原位翻译、本地保存阅读成果。网站支持简体中文、繁体中文和英文；软件当前版本 0.6.8。
+网页与 PDF 双语阅读、输入框原位翻译、本地保存阅读成果。网站支持简体中文、繁体中文和英文；软件当前版本 0.7.0。
 
-Bilingual webpage and PDF reading, in-place input translation, and locally saved reading progress. The website supports Simplified Chinese, Traditional Chinese, and English. Current extension version: 0.6.8.
+Bilingual webpage and PDF reading, in-place input translation, and locally saved reading progress. The website supports Simplified Chinese, Traditional Chinese, and English. Current extension version: 0.7.0.
 
 本仓库用于产品介绍页和公开反馈。目前不包含扩展源码或安装包。网页/PDF 主要为英文译简体中文，OCR 支持英文、德文。
 
@@ -27,3 +27,9 @@ GitHub Pages uses the files in site/. Push changes to main or run the Publish pr
 打开网页自动翻译默认关闭，需用户启用和授权，沿用当前翻译服务。PDF 默认在本机保存，也可在打开或导入前选择“仅本次阅读”。删除文档清理关联缓存，导出阅读包包含完整原 PDF 且未加密，外部备份须另行删除。使用 API 前确认接收地址与发送范围，可在设置撤回；API Key 存于浏览器扩展本地，不进入 PDF 记录或阅读包。机器翻译和 OCR 可能有误，重要内容请核对原文。
 
 Automatic webpage translation is off by default and requires opt-in and permission; it uses the current translation service. PDFs save locally by default, with session-only reading available before opening or importing. Deleting a document clears its linked cache. Reading-package exports include the complete original PDF and are unencrypted; remove external backups separately. Review and confirm the API recipient and sending scope before use; withdraw in settings. API keys stay in local browser extension settings and are excluded from PDF records and reading packages. Machine translation and OCR may be wrong; check important content against the original.
+
+## Selection and persistent input translation / 划词与持续输入翻译
+
+划词翻译默认关闭。开启并授权后，选中英文可查看中文译文、词典音标和词义，点击使用本地英语语音朗读。API 模式提供解释、例句及最多 5 个重点词，支持查词后返回段落；每次最多 4,000 字符。单词联网查询 Free Dictionary API，本地翻译也会查词；不附带页面 URL、相邻正文或 API Key。结果仅在本页内存保留最多 50 项。三次空格持续启用另有独立开关，刷新和重启后无需再次点击工具栏；不会自动提交表单。新版也改善了 Notion 等只读文档的译文显示。
+
+Selection translation is off by default. After opt-in and website permission, select English for Chinese translation, dictionary phonetics and definitions, then click for local English speech. API mode adds explanations, examples and up to five key terms, with lookup and return to the passage. Selections are limited to 4,000 characters. Single words go to Free Dictionary API even in local translation mode, without the page URL, surrounding text or translation API key. Up to 50 results remain in page memory only. Persistent triple-Space input translation has a separate switch and survives refreshes and browser restarts without another toolbar click; it never submits forms. The update also improves translation display on read-only documents such as Notion.
